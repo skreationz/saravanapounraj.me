@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <title>Materialize CSS</title>
+
+    <style>
+        header{
+            background: url(images/background.jpg);
+            background-size: cover;
+            background-position:center;
+            min-height: 1000px;
+            
+        }
+        @media screen and (max-width: 670px ){
+            header{
+                min-height: 500px;
+            }
+        }
+
+        @font-face {
+            font-family: 'autography';
+            src: url('fonts/autography.otf');
+        }
+        @font-face {
+            font-family: 'autography';
+            src: url('fonts/autography.otf');
+        }
+
+
+        .title{
+            font-family: autography;
+            font-size: 5em;
+          
+        }
+        .subtitle{
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2em;
+        }
+        p { margin:0 }
+        img{
+            margin-top: 20px;
+        }
+
+        .nav-wrapper{
+            background-color: transparent;
+            box-shadow: none;
+            
+        }
+
+        .fade-in {
+            animation: fadeIn 4s 1 forwards; ;
+            
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    25% {opacity:0.25;}
+    50% {opacity:0.50;}
+    75% {opacity:0.75;}
+    100% {opacity:1;}
+}
+
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    25% {opacity:0.25;}
+    50% {opacity:0.50;}
+    75% {opacity:0.75;}
+    100% {opacity:1;}
+}
+
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    25% {opacity:0.25;}
+    50% {opacity:0.50;}
+    75% {opacity:0.75;}
+    100% {opacity:1;}
+}
+
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    25% {opacity:0.25;}
+    50% {opacity:0.50;}
+    75% {opacity:0.75;}
+    100% {opacity:1;}
+}
+
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    25% {opacity:0.25;}
+    50% {opacity:0.50;}
+    75% {opacity:0.75;}
+    100% {opacity:1;}
+}
+
+     
+    </style>
+  </head>
+  <body>
+
+    <header>
+        <nav class="nav-wrapper">
+            <div class="container">
+                <a href ="" class="brand-logo black-text title">Sk</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons black-text">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="black-text subtitle" href="#">about</a></li>
+                    <li><a class="black-text subtitle" href="#">skribbles</a></li>
+                    <li><a class="black-text subtitle" href="#">works</a></li>
+                    <li><a class="black-text subtitle" href="#">hire me</a></li>
+                </ul>
+
+                <ul class="sidenav red-lighten-2" id="mobile-menu">
+                    <li><a class="black-text" href="#">about</a></li>
+                    <li><a class="black-text" href="#">skribbles</a></li>
+                    <li><a class="black-text" href="#">works</a></li>
+                    <li><a class="black-text" href="#">hire me</a></li>
+                </ul>
+            </div>
+        </nav>
+      
+        <div class="center-align">
+            <div class="fade-in">
+            <img src="/images/artwork.png" class="responsive-img cf" alt="Responsive Image" width="420" height="420"> 
+           </div>
+            <p class="title">Saravana kumar pounraj</p>
+            <p class="subtitle">graphic designer/illustrator/ motion designer</p>
+          </div>
+        
+    </header>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+    
+          $('.sidenav').sidenav();
+    
+        });
+      </script>
+</body>
+</html>
