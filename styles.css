@@ -8,6 +8,7 @@ html {
 body{
     background: linear-gradient(to bottom, #000000, #434343);
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
 
 
